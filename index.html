@@ -17,6 +17,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              'assignment-color': "#abef5f",
             },
           },
         },
@@ -44,17 +45,76 @@
     </style>
     <title>Assignment-3</title>
   </head>
-  <body class="font-poppings">
-    <!-- header section starts -->
-    <header>
-      <nav>
 
-        <button class="btn btn-warning">Hello </button>
+  <body class="font-poppings ">
+    <!-- header section starts -->
+    <header class="container mx-auto bg-slate-300">
+      <nav>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl"><i class="fa-solid fa-arrow-right -rotate-45 bg-assignment-color rounded-full"></i>Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <i class="fa-solid fa-magnifying-glass bg-white rounded-full mr-5"></i>
+                <i class="fa-solid fa-cart-shopping bg-white rounded-full mr-5"></i>
+              <a class="btn bg-assignment-color rounded-full">Book Consult <span class="bg-black text-white h-5 w-5 p-1 rounded-full"><i class="fa-solid fa-arrow-right -rotate-45 "></i></span></a>
+            </div>
+          </div>
       </nav>
     </header>
 
     <!-- main section starts -->
-    <main></main>
+    <main>
+      <div class="card card-compact bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
     <!-- footer section starts -->
     <footer></footer>
   </body>
